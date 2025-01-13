@@ -54,15 +54,26 @@ thumbnails.forEach((thumbnail, index) => {
 
 let startX = 0;
 let endX = 0;
+let isSwiping = false;
 
 // دعم اللمس لتحريك السلايدر
 slidesContainer.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
+  isSwiping = true; 
+});
+
+
+// أثناء السحب (إيقاف التمرير)
+slidesContainer.addEventListener("touchmove", (e) => {
+  if (isSwiping) {
+    e.preventDefault(); // منع التمرير أثناء السحب
+  }
 });
 
 
 slidesContainer.addEventListener("touchend", (e) => {
   endX = e.changedTouches[0].clientX;
+  isSwiping = false;
   if (startX > endX - 50 && currentIndex > 0) {
     // السحب لليمين: الانتقال للشريحة السابقة
     currentIndex--;
