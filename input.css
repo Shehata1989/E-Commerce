@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: red;
+    --secondary: blue;
+}
+
+body {
+    font-family: "Alexandria", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

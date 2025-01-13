@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!-- Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Icomoon Icons -->
+    <link rel="stylesheet" href="./icomoon/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body dir="rtl">
+    <div id="root">
+      <div
+        class="Announcement flex justify-center items-center p-4 bg-light-primary text-light-textPrimary shadow-sm shadow-light-textPrimary/50"
+      >
+        <i class="icon-delivery_dining text-3xl -mt-1"></i>
+        <h1 class="mr-3 font-bold">شحن مجاني والدفع عند الإستلام</h1>
+      </div>
+      <section class="main text-light-textPrimary">
+        <header class="py-3 px-5">
+          <div class="container mx-auto">
+            <div class="grid grid-cols-12 items-center bg-light-primaryBg">
+              <!-- الشعار -->
+              <div class="col-span-7">
+                <a href="#" class="flex items-center gap-3">
+                  <img
+                    src="./imags/1732516328433920105m.svg"
+                    alt="logo"
+                    class="h-10 w-auto"
+                  />
+                  <span class="text-2xl font-bold">نور</span>
+                </a>
+              </div>
+
+              <!-- القائمة -->
+              <div class="col-span-5">
+                <ul class="flex items-center gap-4">
+                  <li>
+                    <a href="#" class="hover:text-light-primary transition"
+                      >أسئلة و أجوبة</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-light-primary transition"
+                      >مميزات</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-800 hover:text-light-primary transition"
+                      >مراجعات</a
+                    >
+                  </li>
+                  <button
+                    class="flex items-center px-6 py-2 bg-light-primary text-light-textPrimary mr-auto rounded-full hover:bg-[#0b875e] transition"
+                  >
+                    <span>اطلب الان</span>
+                    <i class="icon-shopping-cart mr-2 text-xl -mt-1"></i>
+                  </button>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="important-note pb-10 pt-24 bg-slate-50">
+          <div class="container mx-auto">
+            <div class="grid grid-cols-12 justify-between gap-16">
+              <div class="col-span-6">
+                <img
+                  src="./imags/img-important-note.png"
+                  alt=""
+                  class="max-h-[500px] w-auto"
+                />
+              </div>
+              <div class="col-span-6 flex flex-col justify-center gap-5">
+                <h1 class="text-3xl font-bold">
+                  مكملات ما قبل التمرين الأفضل في مصر
+                </h1>
+                <p class="text-lg leading-7">
+                  مصمم لتعزيز الأداء الرياضي والطاقة أثناء التمارين. يحتوي على
+                  مزيج من المكونات التي تدعم زيادة التركيز، التحمل، والقوة، مثل
+                  الكافيين، الكرياتين، والبيتا ألانين. مناسب للرياضيين وهواة
+                  اللياقة البدنية الذين يسعون لتحسين كفاءتهم وتحقيق أفضل أداء
+                  أثناء التمارين.
+                </p>
+                <button
+                  class="self-center px-6 py-2 bg-light-primary text-light-textPrimary rounded-full hover:bg-[#0b875e] transition"
+                >
+                  <span>اطلب الان</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="brands-images grid grid-cols-12 gap-4 bg-slate-800">
+          <div class="col-span-3 w-full">
+            <img class="h-[35px]" src="/imags/1735872066196772139.png" alt="" />
+          </div>
+          <div class="col-span-3 w-full h-[35px]">
+            <img class="h-[35px]" src="/imags/1735872066199903804.png" alt="" />
+          </div>
+          <div class="col-span-3 w-full h-[35px]">
+            <img class="h-[35px]" src="/imags/1735872066211042121.png" alt="" />
+          </div>
+          <div class="col-span-3 w-full h-[35px]">
+            <img class="h-[35px]" src="/imags/1735872066213540537.png" alt="" />
+          </div>
+        </section>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
