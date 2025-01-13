@@ -915,6 +915,10 @@ video {
   width: auto;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-none {
   flex: none;
 }
@@ -2683,7 +2687,7 @@ body {
 
 @keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 
   100% {
@@ -2705,7 +2709,7 @@ body {
 
 @keyframes slideOut {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
     opacity: 1;
   }
 
@@ -2717,7 +2721,7 @@ body {
 
 @media (max-width: 768px) {
   .move-horizontally {
-    animation: marquee 15s linear infinite;
+    animation: marquee 15s linear infinite forwards;
     display: flex;
   }
 

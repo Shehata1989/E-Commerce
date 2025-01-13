@@ -15,7 +15,7 @@ body {
 
 @keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(100%);
@@ -35,7 +35,7 @@ body {
 
 @keyframes slideOut {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
     opacity: 1;
   }
   100% {
@@ -46,7 +46,7 @@ body {
 
 @media (max-width: 768px) {
   .move-horizontally {
-    animation: marquee 15s linear infinite;
+    animation: marquee 15s linear infinite forwards;
     display: flex;
   }
   ul {
