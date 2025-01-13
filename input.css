@@ -3,12 +3,66 @@
 @tailwind utilities;
 
 :root {
-    --primary: red;
-    --secondary: blue;
+  --primary: red;
+  --secondary: blue;
 }
 
 body {
-    font-family: "Alexandria", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Alexandria", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .move-horizontally {
+    animation: marquee 15s linear infinite;
+    display: flex;
+  }
+  ul {
+    visibility: hidden; /* لا نستخدم display: none */
+    opacity: 0;
+  }
+
+  ul.show {
+    visibility: visible; /* جعل القائمة مرئية */
+    opacity: 1;
+    animation: slideIn 0.5s ease-out forwards; /* تطبيق الأنيميشن عند الفتح */
+  }
+
+  ul.hidden {
+    animation: slideOut 0.5s ease-in forwards; /* تطبيق الأنيميشن عند الإغلاق */
+    visibility: hidden; /* إخفاء العنصر */
+    opacity: 0;
+  }
 }

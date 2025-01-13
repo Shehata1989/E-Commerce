@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3ezuhy');
-  src:  url('fonts/icomoon.eot?3ezuhy#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3ezuhy') format('truetype'),
-    url('fonts/icomoon.woff?3ezuhy') format('woff'),
-    url('fonts/icomoon.svg?3ezuhy#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?3lhvkq");
+  src: url("fonts/icomoon.eot?3lhvkq#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?3lhvkq") format("truetype"),
+    url("fonts/icomoon.woff?3lhvkq") format("woff"),
+    url("fonts/icomoon.svg?3lhvkq#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,28 +26,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-whatsapp:before {
+.icon-delivery_dining:before {
   content: "\e900";
+}
+.icon-whatsapp:before {
+  content: "\e904";
   color: #25d366;
 }
-.icon-instagram:before {
-  content: "\e901";
-  color: #e4405f;
-}
 .icon-messenger:before {
-  content: "\e902";
+  content: "\e901";
   color: #00b2ff;
 }
 .icon-facebook:before {
-  content: "\e903";
+  content: "\e902";
   color: #1877f2;
 }
-.icon-delivery_dining:before {
-  content: "\e904";
+.icon-instagram:before {
+  content: "\e903";
+  color: #e4405f;
+}
+.icon-plus:before {
+  content: "\f067";
+}
+.icon-minus:before {
+  content: "\f068";
 }
 .icon-star:before {
   content: "\f005";
 }
-.icon-shopping-cart:before {
-  content: "\f07a";
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-menu:before {
+  content: "\e9bd";
 }
