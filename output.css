@@ -781,22 +781,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -836,22 +820,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-9 {
-  padding: 2.25rem;
-}
-
-.p-7 {
-  padding: 1.75rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-4 {
