@@ -74,10 +74,10 @@ slidesContainer.addEventListener("touchmove", (e) => {
 slidesContainer.addEventListener("touchend", (e) => {
   endX = e.changedTouches[0].clientX;
   isSwiping = false;
-  if (startX > endX - 50 && currentIndex > 0) {
+  if (startX > endX - 20 && currentIndex > 0) {
     // السحب لليمين: الانتقال للشريحة السابقة
     currentIndex--;
-  } else if (startX < endX + 50 && currentIndex < thumbnails.length - 1) {
+  } else if (startX < endX + 20 && currentIndex < thumbnails.length - 1) {
     // السحب لليسار: الانتقال للشريحة التالية
     currentIndex++;
   }
