@@ -52,8 +52,8 @@ thumbnails.forEach((thumbnail, index) => {
 });
 
 
-
-
+let startX = 0;
+let endX = 0;
 
 // دعم اللمس لتحريك السلايدر
 slidesContainer.addEventListener("touchstart", (e) => {
