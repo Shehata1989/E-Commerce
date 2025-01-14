@@ -26,7 +26,7 @@
     <div id="root">
       <!-- إعلان الشحن المجاني -->
       <div
-        class="announcement text-sm flex justify-center items-center p-4 bg-light-primary text-light-textPrimary shadow-sm shadow-light-textPrimary/50"
+        class="flex items-center justify-center p-4 text-sm shadow-sm announcement bg-light-primary text-light-textPrimary shadow-light-textPrimary/50"
       >
         <i class="icon-delivery_dining text-2xl mt-0.5"></i>
         <h1 class="mr-3 font-bold">شحن مجاني والدفع عند الإستلام</h1>
@@ -35,16 +35,16 @@
       <!-- القسم الرئيسي -->
       <main class="main text-light-textPrimary bg-light-background">
         <!-- الهيدر -->
-        <header class="py-6 px-5">
+        <header class="px-5 py-6">
           <div class="container mx-auto">
-            <div class="grid grid-cols-12 items-center justify-center">
+            <div class="grid items-center justify-center grid-cols-12">
               <!-- الشعار -->
               <div class="col-span-5">
                 <a href="#" class="flex items-center gap-3">
                   <img
                     src="./imags/1732516328433920105m.svg"
                     alt="logo"
-                    class="h-10 w-auto"
+                    class="w-auto h-10"
                   />
                   <span class="text-2xl font-bold">نور</span>
                 </a>
@@ -61,26 +61,26 @@
                 </button>
                 <ul
                   id="nav"
-                  class="md:flex md:flex-row md:items-center md:gap-4 md:py-0 md:static md:top-auto md:right-auto md:w-auto md:h-auto md:bg-transparent md:shadow-none absolute top-0 right-0 w-60 h-full z-10 py-20 flex flex-col items-center gap-7 bg-slate-100 shadow-lg shadow-slate-400/50"
+                  class="absolute top-0 right-0 z-10 flex flex-col items-center h-full py-20 shadow-lg md:flex md:flex-row md:items-center md:gap-4 md:py-0 md:static md:top-auto md:right-auto md:w-auto md:h-auto md:bg-transparent md:shadow-none w-60 gap-7 bg-slate-100 shadow-slate-400/50"
                 >
                   <button
                     id="close"
-                    class="md:hidden absolute top-5 left-5 border bg-light-primary rounded-full w-9 h-9 hover:bg-light-primary transition"
+                    class="absolute transition border rounded-full md:hidden top-5 left-5 bg-light-primary w-9 h-9 hover:bg-light-primary"
                   >
                     X
                   </button>
                   <li>
-                    <a href="#" class="hover:text-light-primary transition"
+                    <a href="#" class="transition hover:text-light-primary"
                       >أسئلة و أجوبة</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="hover:text-light-primary transition"
+                    <a href="#" class="transition hover:text-light-primary"
                       >مميزات</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="hover:text-light-primary transition"
+                    <a href="#" class="transition hover:text-light-primary"
                       >مراجعات</a
                     >
                   </li>
@@ -88,7 +88,7 @@
                     class="flex items-center md:mr-5 px-4 py-2 bg-light-primary text-light-textPrimary rounded-full hover:bg-[#0b875e] transition"
                   >
                     <span>اطلب الان</span>
-                    <i class="icon-cart mr-2 text-xl -mt-1"></i>
+                    <i class="mr-2 -mt-1 text-xl icon-cart"></i>
                   </button>
                 </ul>
               </div>
@@ -98,14 +98,14 @@
 
         <!-- الملاحظة المهمة -->
         <section
-          class="important-note px-5 pb-10 pt-24 text-center md:text-start"
+          class="px-5 pt-24 pb-10 text-center important-note md:text-start"
         >
           <div class="container mx-auto">
-            <div class="grid md:grid-cols-12 justify-between gap-16">
+            <div class="grid justify-between gap-16 md:grid-cols-12">
               <div class="col-span-6">
                 <img src="./imags/img-important-note.png" alt="" />
               </div>
-              <div class="col-span-6 flex flex-col justify-center gap-5">
+              <div class="flex flex-col justify-center col-span-6 gap-5">
                 <h1 class="text-3xl font-bold">
                   مكملات ما قبل التمرين الأفضل في مصر
                 </h1>
@@ -130,7 +130,7 @@
         <section class="brands-images bg-slate-200">
           <div class="container mx-auto overflow-hidden">
             <div
-              class="move-horizontally max-w-full py-7 flex gap-36 md:gap-14 items-center justify-center"
+              class="flex items-center justify-between max-w-full jus move-horizontally py-7 gap-36 md:gap-14"
             >
               <div class="flex-none">
                 <img
@@ -164,29 +164,29 @@
           </div>
         </section>
 
-        <section class="hero py-10 px-5">
+        <section class="px-5 py-10 hero">
           <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="grid grid-cols-1 gap-16 md:grid-cols-12">
               <div class="col-span-6">
-                <div class="slider relative overflow-hidden rounded-lg mb-5">
-                  <div class="slides swiper-wrapper ">
-                    <div class="slide swiper-slide ">
+                <div class="relative mb-5 overflow-hidden rounded-3xl slider">
+                  <div class="slides swiper-wrapper">
+                    <div class="slide swiper-slide">
                       <img
-                        class="object-cover w-full rounded-lg hover:scale-125 transition duration-500 hover:cursor-zoom-in"
+                        class="object-cover w-full transition duration-500 hover:scale-125 hover:cursor-zoom-in"
                         src="./imags/middle-1.webp"
                         alt="Slide 1"
                       />
                     </div>
-                    <div class="slide swiper-slide w-full">
+                    <div class="w-full slide swiper-slide">
                       <img
-                        class="object-cover w-full rounded-lg hover:scale-125 transition duration-500 hover:cursor-zoom-in"
+                        class="object-cover w-full transition duration-500 hover:scale-125 hover:cursor-zoom-in"
                         src="./imags/middle-2.webp"
                         alt="Slide 2"
                       />
                     </div>
-                    <div class="slide swiper-slide w-full">
+                    <div class="w-full slide swiper-slide">
                       <img
-                        class="object-cover w-full rounded-lg hover:scale-125 transition duration-500 hover:cursor-zoom-in"
+                        class="object-cover w-full transition duration-500 hover:scale-125 hover:cursor-zoom-in"
                         src="./imags/middle-3.webp"
                         alt="Slide 3"
                       />
@@ -197,33 +197,134 @@
                   class="swiper-pagination !static !translate-x-0 !w-full"
                 ></div>
 
-                <div class="hidden md:block thumbnail-swiper mt-5">
-                  <div class="swiper-wrapper flex items-center gap-2">
-                    <div class="thumbnail swiper-slide cursor-pointer flex-1">
+                <div class="hidden mt-5 md:block thumbnail-swiper">
+                  <div class="flex items-center gap-2 swiper-wrapper">
+                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
                       <img
                         src="./imags/middle-1.webp"
-                        class="object-cover rounded-lg h-full w-full "
+                        class="object-cover w-full h-full rounded-lg"
                         alt="Thumbnail 1"
                       />
                     </div>
-                    <div class="thumbnail swiper-slide cursor-pointer flex-1">
+                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
                       <img
                         src="./imags/middle-2.webp"
-                        class="object-cover rounded-lg h-full w-full"
+                        class="object-cover w-full h-full rounded-lg"
                         alt="Thumbnail 2"
                       />
                     </div>
-                    <div class="thumbnail swiper-slide cursor-pointer flex-1">
+                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
                       <img
                         src="./imags/middle-3.webp"
-                        class="object-cover rounded-lg h-full w-full"
+                        class="object-cover w-full h-full rounded-lg"
                         alt="Thumbnail 3"
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-span-6"></div>
+              <div class="col-span-6">
+                <div class="content text-center md:text-start">
+                  <div
+                    class="flex items-center justify-center md:justify-start gap-1 personal-img"
+                  >
+                    <div class="flex max-w-[170px]">
+                      <img
+                        class="max-w-full rounded-full h-12 w-12"
+                        src="./imags/1.jpeg"
+                        alt=""
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-4"
+                        src="./imags/2.jpeg"
+                        alt=""
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-8"
+                        src="./imags/3.jpeg"
+                        alt=""
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-12"
+                        src="./imags/4.jpeg"
+                        alt=""
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-16"
+                        src="./imags/5.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h1 class="text-light-textSecondary text-sm">
+                      منتج موثوق من أكثر من 500 شخص
+                    </h1>
+                  </div>
+                  <h1 class="font-bold text-2xl my-5">القارئ الإلكتروني</h1>
+                  <p class="text-lg text-light-textSecondary mb-5">
+                    صريات دائرية مع مستقطبات دائرية وأفلام عاكسة (من 0 إلى -5.75
+                    ديوبتر قابلة للتعديل) نطاق تعديل المسافة بين الحدقتين (IPD)
+                    من 58 إلى 72 ملم يعرض الحبر الإلكتروني مقاس 1.3 بوصة وكثافة
+                    271 نقطة في البوصة إضاءة جانبية مع مصابيح LED 3000K
+                  </p>
+                  <div
+                    class="price flex justify-center md:justify-start items-center gap-5"
+                  >
+                    <b class="text-2xl font-bold">2500 ج.م</b>
+                    <span class="text-sm line-through text-light-textSecondary"
+                      >5000 ج.م</span
+                    >
+                    <button
+                      class="animate-blink px-6 py-2 bg-light-primary rounded-full hover:bg-[#0b875e] transition"
+                    >
+                      <span class="animate-blink">اطلب الان</span>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  id="timer"
+                  class="text-center text-light-primary font-bold text-xl flex gap-5 justify-center items-center my-7"
+                >
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="days">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>اليوم</span>
+                  </div>
+                  <div class="text-3xl text-light-textPrimary font-bold">:</div>
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="hours">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>الساعه</span>
+                  </div>
+                  <div class="text-3xl text-light-textPrimary font-bold">:</div>
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="minutes">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>دقيقة</span>
+                  </div>
+                  <div class="text-3xl text-light-textPrimary font-bold">:</div>
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="seconds">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>ثانية</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
