@@ -60,17 +60,27 @@ const mainSwiper = new Swiper(".slider", {
 
 // #############################################################
 
-// تحديد التاريخ المستهدف
-const targetDate = new Date("2025-01-31T23:59:59");
+// الحصول على الوقت الحالي
+const now = new Date();
+
+// تحديد الوقت المستهدف بعد 8 ساعات من الوقت الحالي
+let targetDate = new Date(now.getTime() + 8 * 60 * 60 * 1000);
 
 // دالة لتحديث العداد
 function updateTimer() {
   const now = new Date();
   const diff = targetDate - now;
 
+  // التحقق إذا انتهى الوقت
   if (diff <= 0) {
-    document.getElementById("timer").innerHTML = "انتهى الوقت!";
-    clearInterval(timerInterval); // إيقاف العداد
+    document.getElementById("timer").innerHTML = "انتهى الوقت !";
+
+   new Promise((resolve) => {
+    setTimeout(resolve, 5000);
+  }).then(() => {
+    updateTimer();
+    window.location.reload();
+  });
     return;
   }
 
@@ -81,15 +91,22 @@ function updateTimer() {
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // تحديث القيم في HTML
-  
-  document.getElementById("days").textContent = days.toString()
-  document.getElementById("hours").textContent = hours.toString()
-  document.getElementById("minutes").textContent = minutes.toString()
-  document.getElementById("seconds").textContent = seconds.toString()
+  document.getElementById("days").textContent = days
+    .toString()
+    .padStart(2, "0");
+  document.getElementById("hours").textContent = hours
+    .toString()
+    .padStart(2, "0");
+  document.getElementById("minutes").textContent = minutes
+    .toString()
+    .padStart(2, "0");
+  document.getElementById("seconds").textContent = seconds
+    .toString()
+    .padStart(2, "0");
 }
 
 // تحديث العداد كل ثانية
-const timerInterval = setInterval(updateTimer, 1000);
+setInterval(updateTimer, 1000);
 
 // استدعاء أولي لتحديث العرض
 updateTimer();

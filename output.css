@@ -1262,14 +1262,6 @@ body {
     gap: 1rem;
   }
 
-  .md\:gap-5 {
-    gap: 1.25rem;
-  }
-
-  .md\:gap-2 {
-    gap: 0.5rem;
-  }
-
   .md\:bg-transparent {
     background-color: transparent;
   }
@@ -1281,11 +1273,6 @@ body {
 
   .md\:text-start {
     text-align: start;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .md\:text-lg {
