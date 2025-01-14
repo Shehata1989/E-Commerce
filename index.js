@@ -63,7 +63,6 @@ const mainSwiper = new Swiper(".slider", {
 // الحصول على الوقت الحالي
 const now = new Date();
 
-
 let targetDate = localStorage.getItem("targetDate");
 if (!targetDate) {
   targetDate = new Date(now.getTime() + 8 * 60 * 60 * 1000);
@@ -77,18 +76,17 @@ function updateTimer() {
   const now = new Date();
   const diff = targetDate - now;
 
-
   // التحقق إذا انتهى الوقت
   if (diff <= 0) {
     document.getElementById("timer").innerHTML = "انتهى الوقت !";
 
-   new Promise((resolve) => {
-    setTimeout(resolve, 5000);
-  }).then(() => {
-    localStorage.removeItem("targetDate");
-    updateTimer();
-    window.location.reload();
-  });
+    new Promise((resolve) => {
+      setTimeout(resolve, 5000);
+    }).then(() => {
+      localStorage.removeItem("targetDate");
+      updateTimer();
+      window.location.reload();
+    });
     return;
   }
 
