@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary: red;
-  --secondary: blue;
-}
 
 body {
   font-family: "Alexandria", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.swiper-pagination-bullet-active {
+  background: #10b981 !important;
 }
 
 @keyframes marquee {
@@ -44,25 +44,26 @@ body {
   }
 }
 
+
 @media (max-width: 768px) {
   .move-horizontally {
     animation: marquee 15s linear infinite forwards;
     display: flex;
   }
   ul {
-    visibility: hidden; /* لا نستخدم display: none */
+    visibility: hidden;
     opacity: 0;
   }
 
   ul.show {
-    visibility: visible; /* جعل القائمة مرئية */
+    visibility: visible;
     opacity: 1;
-    animation: slideIn 0.5s ease-out forwards; /* تطبيق الأنيميشن عند الفتح */
+    animation: slideIn 0.5s ease-out forwards;
   }
 
   ul.hidden {
-    animation: slideOut 0.5s ease-in forwards; /* تطبيق الأنيميشن عند الإغلاق */
-    visibility: hidden; /* إخفاء العنصر */
+    animation: slideOut 0.5s ease-in forwards;
+    visibility: hidden;
     opacity: 0;
   }
 }
