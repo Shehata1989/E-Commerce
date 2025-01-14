@@ -628,18 +628,6 @@ video {
   top: 1.25rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.\!left-0 {
-  left: 0px !important;
-}
-
-.\!right-0 {
-  right: 0px !important;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -665,6 +653,10 @@ video {
   margin-top: -0.25rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-\[2px\] {
   margin-bottom: 2px;
 }
@@ -683,10 +675,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -717,6 +705,10 @@ video {
   height: 100%;
 }
 
+.\!w-full {
+  width: 100% !important;
+}
+
 .w-60 {
   width: 15rem;
 }
@@ -731,10 +723,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.\!w-full {
-  width: 100% !important;
 }
 
 .max-w-full {
@@ -861,10 +849,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .p-4 {
@@ -1021,9 +1005,12 @@ video {
   transition-duration: 150ms;
 }
 
-:root {
-  --primary: red;
-  --secondary: blue;
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 body {
@@ -1078,25 +1065,30 @@ body {
 
   ul {
     visibility: hidden;
-    /* لا نستخدم display: none */
     opacity: 0;
   }
 
   ul.show {
     visibility: visible;
-    /* جعل القائمة مرئية */
     opacity: 1;
     animation: slideIn 0.5s ease-out forwards;
-    /* تطبيق الأنيميشن عند الفتح */
   }
 
   ul.hidden {
     animation: slideOut 0.5s ease-in forwards;
-    /* تطبيق الأنيميشن عند الإغلاق */
     visibility: hidden;
-    /* إخفاء العنصر */
     opacity: 0;
   }
+}
+
+.hover\:scale-125:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:cursor-zoom-in:hover {
+  cursor: zoom-in;
 }
 
 .hover\:bg-\[\#0b875e\]:hover {

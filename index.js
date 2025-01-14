@@ -29,6 +29,7 @@ document.addEventListener("click", (event) => {
 
 // ######################################################################
 
+const isLargeScreen = window.matchMedia("(min-width: 768px)").matches;
 
   const thumbnailSwiper = new Swiper(".thumbnail-swiper", {
     slidesPerView: 3,
@@ -40,6 +41,13 @@ document.addEventListener("click", (event) => {
   const mainSwiper = new Swiper(".slider", {
     loop: true,
     spaceBetween: 10,
+    effect: "cube",
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
     grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
@@ -47,7 +55,8 @@ document.addEventListener("click", (event) => {
       dynamicBullets: true,
     },
     thumbs: {
-      swiper: thumbnailSwiper, // الربط بين السلايدر الرئيسي والمصغر
+      swiper: thumbnailSwiper,
     },
+    simulateTouch: !isLargeScreen,
   });
 
