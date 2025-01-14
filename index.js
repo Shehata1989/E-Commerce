@@ -63,13 +63,20 @@ const mainSwiper = new Swiper(".slider", {
 // الحصول على الوقت الحالي
 const now = new Date();
 
-// تحديد الوقت المستهدف بعد 8 ساعات من الوقت الحالي
-let targetDate = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+
+let targetDate = localStorage.getItem("targetDate");
+if (!targetDate) {
+  targetDate = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+  localStorage.setItem("targetDate", targetDate);
+} else {
+  targetDate = new Date(targetDate);
+}
 
 // دالة لتحديث العداد
 function updateTimer() {
   const now = new Date();
   const diff = targetDate - now;
+
 
   // التحقق إذا انتهى الوقت
   if (diff <= 0) {
@@ -78,6 +85,7 @@ function updateTimer() {
    new Promise((resolve) => {
     setTimeout(resolve, 5000);
   }).then(() => {
+    localStorage.removeItem("targetDate");
     updateTimer();
     window.location.reload();
   });
