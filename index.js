@@ -136,3 +136,5 @@ minus.addEventListener("click", () => {
     quantity.value = parseInt(quantity.value) - 1;
   }
 });
+
+// ######################################################################
