@@ -98,14 +98,18 @@
 
         <!-- الملاحظة المهمة -->
         <section
-          class="px-5 pt-24 pb-10 text-center important-note md:text-start"
+          class="px-5 pt-20 pb-10 text-center important-note md:text-start"
         >
           <div class="container mx-auto">
             <div
               class="grid justify-between gap-16 grid-cols-1 md:grid-cols-12"
             >
               <div class="col-span-6">
-                <img src="./imags/img-important-note.png" alt="" />
+                <img
+                  class="w-full h-full object-cover rounded-3xl"
+                  src="./imags/img-important-note.png"
+                  alt=""
+                />
               </div>
               <div class="flex flex-col justify-center col-span-6 gap-5">
                 <h1 class="text-3xl font-bold">
@@ -129,10 +133,10 @@
         </section>
 
         <!-- صور العلامات التجارية -->
-        <section class="brands-images bg-slate-200">
+        <section class="brands-images px-5 py-7 bg-slate-200">
           <div class="container mx-auto overflow-hidden">
             <div
-              class="flex items-center justify-between max-w-full animate-marquee md:animate-none py-7 gap-36 md:gap-14"
+              class="flex items-center justify-between max-w-full animate-marquee md:animate-none gap-36 md:gap-14"
             >
               <div class="flex-none">
                 <img
@@ -166,7 +170,7 @@
           </div>
         </section>
 
-        <section class="px-5 py-10 hero">
+        <section class="hero px-5 py-10">
           <div class="container mx-auto">
             <div class="grid grid-cols-1 gap-16 md:grid-cols-12">
               <div class="col-span-6">
@@ -199,7 +203,7 @@
                   class="swiper-pagination !static !translate-x-0 !w-full"
                 ></div>
 
-                <div class="hidden mt-5 md:ock thumbnail-swiper">
+                <div class="hidden mt-5 md:block thumbnail-swiper">
                   <div class="flex items-center gap-2 swiper-wrapper">
                     <div class="flex-1 cursor-pointer thumbnail swiper-slide">
                       <img
