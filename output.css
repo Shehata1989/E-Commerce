@@ -771,10 +771,6 @@ video {
   width: 2.25rem;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-\[90px\] {
   width: 90px;
 }
@@ -787,18 +783,6 @@ video {
   width: 100%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
 .max-w-\[170px\] {
   max-width: 170px;
 }
@@ -809,10 +793,6 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.flex-none {
-  flex: none;
 }
 
 .\!translate-x-0 {
@@ -923,10 +903,6 @@ video {
 
 .self-center {
   align-self: center;
-}
-
-.overflow-auto {
-  overflow: auto;
 }
 
 .overflow-hidden {
