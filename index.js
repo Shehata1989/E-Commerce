@@ -116,3 +116,23 @@ setInterval(updateTimer, 1000);
 
 // استدعاء أولي لتحديث العرض
 updateTimer();
+
+// ######################################################################
+
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const quantity = document.getElementById("quantity");
+
+plus.addEventListener("click", () => {
+  quantity.value = parseInt(quantity.value) + 1;
+});
+
+if (quantity.value <= 0) {
+  quantity.value = 1;
+}
+
+minus.addEventListener("click", () => {
+  if (quantity.value > 1) {
+    quantity.value = parseInt(quantity.value) - 1;
+  }
+});
