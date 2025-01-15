@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!-- Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Icomoon Icons -->
+    <link rel="stylesheet" href="./icomoon/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- أنماط Swiper.js للسلايدر -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+  </head>
+
+  <body dir="rtl">
+    <div id="root">
+      <!-- إعلان الشحن المجاني -->
+      <section class="free-shipping">
+        <div
+          class="flex items-center justify-center p-4 text-sm shadow-sm announcement bg-light-primary text-light-textPrimary shadow-light-textPrimary/50"
+        >
+          <i class="icon-delivery_dining text-2xl mt-0.5"></i>
+          <h1 class="mr-3 font-bold">شحن مجاني والدفع عند الإستلام</h1>
+        </div>
+      </section>
+
+      <!-- المحتوى الرئيسي -->
+      <main class="main text-light-textPrimary bg-light-background">
+        <!-- الهيدر -->
+        <header class="px-5 py-6">
+          <div class="container mx-auto">
+            <div class="grid items-center justify-center grid-cols-12">
+              <!-- الشعار -->
+              <div class="col-span-5">
+                <a href="#" class="flex items-center gap-3">
+                  <img
+                    src="./imags/1732516328433920105m.svg"
+                    alt="logo"
+                    class="w-auto h-10"
+                  />
+                  <span class="text-2xl font-bold">نور</span>
+                </a>
+              </div>
+
+              <!-- القائمة -->
+              <div class="col-span-7 place-self-end">
+                <!-- زر فتح القائمة -->
+                <button
+                  id="menu"
+                  class="md:hidden text-2xl mb-[2px] text-gray-800 hover:text-light-primary transition"
+                  aria-label="Toggle Menu"
+                >
+                  <i class="icon-menu"></i>
+                </button>
+                <!-- محتوى القائمة -->
+                <ul
+                  id="nav"
+                  class="absolute top-0 right-0 z-10 flex flex-col items-center h-full py-20 shadow-lg md:flex md:flex-row md:items-center md:gap-4 md:py-0 md:static md:top-auto md:right-auto md:w-auto md:h-auto md:bg-transparent md:shadow-none w-60 gap-7 bg-slate-100 shadow-slate-400/50"
+                >
+                  <!-- زر غلق القائمة -->
+                  <button
+                    id="close"
+                    class="absolute transition border rounded-full md:hidden top-5 left-5 bg-light-primary w-9 h-9 hover:bg-light-primary"
+                  >
+                    X
+                  </button>
+                  <!-- عناصر القائمة -->
+                  <li>
+                    <a href="#" class="transition hover:text-light-primary"
+                      >أسئلة و أجوبة</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="transition hover:text-light-primary"
+                      >مميزات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="transition hover:text-light-primary"
+                      >مراجعات</a
+                    >
+                  </li>
+                  <button
+                    class="flex items-center md:mr-5 px-4 py-2 bg-light-primary text-light-textPrimary rounded-full hover:bg-[#0b875e] transition"
+                  >
+                    <span>اطلب الان</span>
+                    <i class="mr-2 -mt-1 text-xl icon-cart"></i>
+                  </button>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- قسم ملاحظات المنتج -->
+        <section
+          class="px-5 pt-20 pb-10 text-center important-note md:text-start"
+        >
+          <div class="container mx-auto">
+            <div
+              class="grid justify-between gap-16 grid-cols-1 md:grid-cols-12"
+            >
+              <!-- صورة المنتج -->
+              <div class="col-span-6">
+                <img
+                  class="w-full h-full object-cover rounded-3xl"
+                  src="./imags/img-important-note.png"
+                  alt="مكملات ما قبل التمرين"
+                />
+              </div>
+              <!-- وصف المنتج -->
+              <div class="flex flex-col justify-center col-span-6 gap-5">
+                <h1 class="text-3xl font-bold">
+                  مكملات ما قبل التمرين الأفضل في مصر
+                </h1>
+                <p class="text-lg leading-7 text-light-textSecondary">
+                  مصمم لتعزيز الأداء الرياضي والطاقة أثناء التمارين. يحتوي على
+                  مزيج من المكونات التي تدعم زيادة التركيز، التحمل، والقوة، مثل
+                  الكافيين، الكرياتين، والبيتا ألانين. مناسب للرياضيين وهواة
+                  اللياقة البدنية الذين يسعون لتحسين كفاءتهم وتحقيق أفضل أداء
+                  أثناء التمارين.
+                </p>
+                <button
+                  class="self-center px-6 py-2 bg-light-primary rounded-full hover:bg-[#0b875e] transition"
+                >
+                  <span>اطلب الان</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم العلامات التجارية -->
+        <section class="brands-images px-5 py-7 bg-slate-200">
+          <div class="container mx-auto overflow-hidden">
+            <div
+              class="flex items-center justify-between max-w-full animate-marquee md:animate-none gap-36 md:gap-14"
+            >
+              <img
+                class="h-[35px]"
+                src="/imags/1735872066196772139.png"
+                alt="علامة تجارية 1"
+              />
+              <img
+                class="h-[35px]"
+                src="/imags/1735872066199903804.png"
+                alt="علامة تجارية 2"
+              />
+              <img
+                class="h-[35px]"
+                src="/imags/1735872066211042121.png"
+                alt="علامة تجارية 3"
+              />
+              <img
+                class="h-[35px]"
+                src="/imags/1735872066213540537.png"
+                alt="علامة تجارية 4"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- (Hero Section): يحتوي على السلايدر والمحتوى الرئيسي للمنتج -->
+        <section class="hero px-5 py-10">
+          <div class="container mx-auto">
+            <!-- شبكة مقسمة إلى أعمدة -->
+            <div class="grid grid-cols-1 gap-16 md:grid-cols-12">
+              <!-- قسم السلايدر -->
+              <div class="col-span-6">
+                <div class="slider relative mb-5 rounded-3xl overflow-hidden">
+                  <!-- صور السلايدر -->
+                  <div class="slides swiper-wrapper">
+                    <div class="slide swiper-slide">
+                      <img
+                        class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
+                        src="./imags/middle-1.webp"
+                        alt="Slide 1"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-full slide swiper-slide">
+                      <img
+                        class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
+                        src="./imags/middle-2.webp"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-full slide swiper-slide">
+                      <img
+                        class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
+                        src="./imags/middle-3.webp"
+                        alt="Slide 3"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- نقاط التنقل (Pagination) -->
+                <div
+                  class="swiper-pagination !static !translate-x-0 !w-full"
+                ></div>
+                <!-- صور المصغرات -->
+                <div class="hidden mt-5 md:block thumbnail-swiper">
+                  <div class="flex items-center gap-2 swiper-wrapper">
+                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
+                      <img
+                        src="./imags/middle-1.webp"
+                        class="object-cover w-full h-full rounded-3xl"
+                        alt="Thumbnail 1"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
+                      <img
+                        src="./imags/middle-2.webp"
+                        class="object-cover w-full h-full rounded-3xl"
+                        alt="Thumbnail 2"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
+                      <img
+                        src="./imags/middle-3.webp"
+                        class="object-cover w-full h-full rounded-3xl"
+                        alt="Thumbnail 3"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- قسم التفاصيل -->
+              <div class="col-span-6">
+                <div class="content text-center md:text-start">
+                  <!-- صور الأشخاص -->
+                  <div
+                    class="flex items-center justify-center md:justify-start gap-1 personal-img"
+                  >
+                    <div class="flex max-w-[170px]">
+                      <img
+                        class="max-w-full rounded-full h-12 w-12"
+                        src="./imags/1.jpeg"
+                        alt="شخص 1"
+                        loading="lazy"
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-4"
+                        src="./imags/2.jpeg"
+                        alt="شخص 2"
+                        loading="lazy"
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-8"
+                        src="./imags/3.jpeg"
+                        alt="شخص 3"
+                        loading="lazy"
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-12"
+                        src="./imags/4.jpeg"
+                        alt="شخص 4"
+                        loading="lazy"
+                      />
+                      <img
+                        class="max-w-full rounded-full h-12 w-12 relative left-16"
+                        src="./imags/5.jpg"
+                        alt="شخص 5"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h1 class="text-light-textSecondary text-sm">
+                      منتج موثوق من أكثر من 500 شخص
+                    </h1>
+                  </div>
+
+                  <!-- عنوان المنتج -->
+                  <h1 class="font-bold text-2xl my-5">القارئ الإلكتروني</h1>
+
+                  <!-- وصف المنتج -->
+                  <p class="text-lg leading-7 text-light-textSecondary mb-5">
+                    صريات دائرية مع مستقطبات دائرية وأفلام عاكسة (من 0 إلى -5.75
+                    ديوبتر قابلة للتعديل) نطاق تعديل المسافة بين الحدقتين (IPD)
+                    من 58 إلى 72 ملم يعرض الحبر الإلكتروني مقاس 1.3 بوصة وكثافة
+                    271 نقطة في البوصة إضاءة جانبية مع مصابيح LED 3000K
+                  </p>
+
+                  <!-- السعر وزر الشراء -->
+                  <div
+                    class="price flex justify-center md:justify-start items-center gap-5"
+                  >
+                    <b class="text-xl md:text-2xl font-bold">2500 ج.م</b>
+                    <span class="text-sm line-through text-light-textSecondary"
+                      >5000 ج.م</span
+                    >
+                    <button
+                      class="animate-blink px-6 py-2 bg-light-primary rounded-full hover:bg-[#0b875e] transition"
+                    >
+                      <span>اطلب الآن</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- المؤقت -->
+                <div
+                  id="timer"
+                  class="text-center text-light-primary font-bold text-sm md:text-lg lg:text-xl flex gap-2 lg:gap-5 justify-center items-center my-7"
+                >
+                  <!-- يوم -->
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="days">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>اليوم</span>
+                  </div>
+                  <!-- فاصلة -->
+                  <div class="text-4xl text-light-textPrimary font-bold -mt-2">
+                    :
+                  </div>
+                  <!-- ساعة -->
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="hours">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>الساعة</span>
+                  </div>
+                  <div class="text-4xl text-light-textPrimary font-bold -mt-2">
+                    :
+                  </div>
+                  <!-- دقيقة -->
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="minutes">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>دقيقة</span>
+                  </div>
+                  <div class="text-4xl text-light-textPrimary font-bold -mt-2">
+                    :
+                  </div>
+                  <!-- ثانية -->
+                  <div
+                    class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
+                  >
+                    <span id="seconds">00</span>
+                    <span
+                      class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
+                    ></span>
+                    <span>ثانية</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

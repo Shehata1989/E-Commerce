@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Alexandria", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.swiper-pagination-bullet-active {
+  background: #10b981 !important;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  ul {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  ul.show {
+    visibility: visible;
+    opacity: 1;
+    animation: slideIn 0.5s ease-out forwards;
+  }
+
+  ul.hidden {
+    animation: slideOut 0.5s ease-in forwards;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
