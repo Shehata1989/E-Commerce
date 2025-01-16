@@ -170,69 +170,69 @@
         <!-- (Hero Section): يحتوي على السلايدر والمحتوى الرئيسي للمنتج -->
         <section class="hero px-5 py-10">
           <div class="container mx-auto">
-            <!-- شبكة مقسمة إلى أعمدة -->
             <div class="grid grid-cols-1 gap-16 md:grid-cols-12">
               <!-- قسم السلايدر -->
-              <div class="col-span-6">
-                <div class="slider relative mb-5 rounded-3xl overflow-hidden">
-                  <!-- صور السلايدر -->
-                  <div class="slides swiper-wrapper">
-                    <div class="slide swiper-slide">
-                      <img
-                        class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
-                        src="./imags/middle-1.webp"
-                        alt="Slide 1"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="w-full slide swiper-slide">
-                      <img
-                        class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
-                        src="./imags/middle-2.webp"
-                        alt="Slide 2"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="w-full slide swiper-slide">
-                      <img
-                        class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
-                        src="./imags/middle-3.webp"
-                        alt="Slide 3"
-                        loading="lazy"
-                      />
+              <div class="col-span-6 relative">
+                <div class="static md:sticky md:top-5">
+                  <div class="slider relative mb-5 rounded-3xl overflow-hidden">
+                    <!-- صور السلايدر -->
+                    <div class="slides swiper-wrapper">
+                      <div class="slide swiper-slide">
+                        <img
+                          class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
+                          src="./imags/middle-1.webp"
+                          alt="Slide 1"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="w-full slide swiper-slide">
+                        <img
+                          class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
+                          src="./imags/middle-2.webp"
+                          alt="Slide 2"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="w-full slide swiper-slide">
+                        <img
+                          class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
+                          src="./imags/middle-3.webp"
+                          alt="Slide 3"
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- نقاط التنقل (Pagination) -->
-                <div
-                  class="swiper-pagination !static !translate-x-0 !w-full"
-                ></div>
-                <!-- صور المصغرات -->
-                <div class="hidden mt-5 md:block thumbnail-swiper">
-                  <div class="flex items-center gap-2 swiper-wrapper">
-                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
-                      <img
-                        src="./imags/middle-1.webp"
-                        class="object-cover w-full h-full rounded-3xl"
-                        alt="Thumbnail 1"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
-                      <img
-                        src="./imags/middle-2.webp"
-                        class="object-cover w-full h-full rounded-3xl"
-                        alt="Thumbnail 2"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="flex-1 cursor-pointer thumbnail swiper-slide">
-                      <img
-                        src="./imags/middle-3.webp"
-                        class="object-cover w-full h-full rounded-3xl"
-                        alt="Thumbnail 3"
-                        loading="lazy"
-                      />
+                  <div
+                    class="swiper-pagination !static !translate-x-0 !w-full"
+                  ></div>
+                  <!-- صور المصغرات -->
+                  <div class="thumbnail-swiper hidden mt-5 md:block">
+                    <div class="flex items-center gap-2 swiper-wrapper">
+                      <div class="flex-1 cursor-pointer thumbnail swiper-slide">
+                        <img
+                          src="./imags/middle-1.webp"
+                          class="object-cover w-full h-full rounded-3xl"
+                          alt="Thumbnail 1"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="flex-1 cursor-pointer thumbnail swiper-slide">
+                        <img
+                          src="./imags/middle-2.webp"
+                          class="object-cover w-full h-full rounded-3xl"
+                          alt="Thumbnail 2"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="flex-1 cursor-pointer thumbnail swiper-slide">
+                        <img
+                          src="./imags/middle-3.webp"
+                          class="object-cover w-full h-full rounded-3xl"
+                          alt="Thumbnail 3"
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -363,6 +363,97 @@
                       class="h-[2px] w-full bg-light-primary absolute left-0 top-1/2 -translate-y-1/2"
                     ></span>
                     <span>ثانية</span>
+                  </div>
+                </div>
+
+                <div class="form-order">
+                  <div class="container mx-auto">
+                    <form class="text-sm" action="">
+                      <div class="quantity flex flex-col gap-4 justify-center">
+                        <h1 class="title text-lg font-bold">
+                          يرجى ادخال معلوماتك لإكمال الطلب
+                        </h1>
+                        <div
+                          class="flex items-center justify-between bg-light-primary p-2 rounded-xl"
+                        >
+                          <h1 class="text-sm mr-2">عدد القطع</h1>
+                          <div
+                            class="flex items-center justify-center gap-2 md:gap-5 bg-light-textPrimary p-2 rounded-xl"
+                          >
+                            <button
+                              type="button"
+                              id="plus"
+                              class="minus bg-light-background w-[30px] h-[30px] rounded-lg font-bold text-2xl"
+                            >
+                              +
+                            </button>
+                            <input
+                              dir="ltr"
+                              id="quantity-input"
+                              class="w-16 text-center text-xl font-bold bg-transparent text-white border border-light-primary rounded-lg"
+                              type="text"
+                              value="1"
+                            />
+                            <button
+                              id="minus"
+                              type="button"
+                              class="plus bg-light-background w-[30px] h-[30px] rounded-lg font-bold text-2xl"
+                            >
+                              -
+                            </button>
+                          </div>
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                          <label for="name">اسمك بالكامل</label>
+                          <input
+                            class="w-full p-2 border border-light-primary rounded-lg outline-none"
+                            type="text"
+                            id="name"
+                          />
+                          <!-- <p>هذا الحقل مطلوب !</p> -->
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                          <label for="name">رقم الهاتف</label>
+                          <input
+                            class="w-full p-2 border border-light-primary rounded-lg outline-none"
+                            type="text"
+                            id="phone-number"
+                          />
+                          <!-- <p>هذا الحقل مطلوب !</p> -->
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                          <label for="name">العنوان بالتفصيل</label>
+                          <textarea
+                            class="w-full p-2 border border-light-primary rounded-lg outline-none overflow-hidden"
+                            id="address"
+                          ></textarea>
+                          <!-- <p>هذا الحقل مطلوب !</p> -->
+                        </div>
+
+                        <div
+                          class="font-bold flex justify-between items-center"
+                        >
+                          <h1 class="">تكلفة الشحن</h1>
+                          <h1 class="">شحن مجاني</h1>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-between bg-light-primary p-4 rounded-xl"
+                        >
+                          <h1>إجمالي المبلغ:</h1>
+                          <h1>الاجمالي: <b id="total">2500 ج.م</b></h1>
+                        </div>
+
+                        <button
+                          class="px-6 py-2 font-bold bg-light-primary rounded-full hover:bg-[#0b875e] transition"
+                        >
+                          <span>اطلب الآن</span>
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>

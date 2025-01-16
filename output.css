@@ -683,16 +683,6 @@ video {
   margin-bottom: 1.75rem;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -757,6 +747,10 @@ video {
   height: 2px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .h-\[35px\] {
   height: 35px;
 }
@@ -773,12 +767,20 @@ video {
   width: 3rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-60 {
   width: 15rem;
 }
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .w-\[90px\] {
@@ -899,6 +901,10 @@ video {
   gap: 9rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -919,34 +925,6 @@ video {
   overflow: hidden;
 }
 
-.text-clip {
-  text-overflow: clip;
-}
-
-.whitespace-pre {
-  white-space: pre;
-}
-
-.whitespace-pre-line {
-  white-space: pre-line;
-}
-
-.whitespace-pre-wrap {
-  white-space: pre-wrap;
-}
-
-.whitespace-break-spaces {
-  white-space: break-spaces;
-}
-
-.text-wrap {
-  text-wrap: wrap;
-}
-
-.text-nowrap {
-  text-wrap: nowrap;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -959,8 +937,17 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-light-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity, 1));
 }
 
 .bg-light-background {
@@ -988,9 +975,17 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -1107,6 +1102,11 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
@@ -1137,6 +1137,11 @@ video {
 .shadow-slate-400\/50 {
   --tw-shadow-color: rgb(148 163 184 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .blur {
@@ -1248,8 +1253,16 @@ body {
     position: static;
   }
 
+  .md\:sticky {
+    position: sticky;
+  }
+
   .md\:right-auto {
     right: auto;
+  }
+
+  .md\:top-5 {
+    top: 1.25rem;
   }
 
   .md\:top-auto {
@@ -1306,6 +1319,10 @@ body {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .md\:bg-transparent {

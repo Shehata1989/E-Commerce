@@ -116,3 +116,33 @@ setInterval(updateTimer, 1000);
 
 // استدعاء أولي لتحديث العرض
 updateTimer();
+
+// ######################################################################
+
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const quantityInput = document.getElementById("quantity-input");
+const totalPrice = document.getElementById("total");
+
+plus.addEventListener("click", () => {
+  let currentValue = parseInt(quantityInput.value);
+  quantityInput.value = currentValue + 1;
+  totalPrice.textContent = quantityInput.value * 2500;
+});
+
+minus.addEventListener("click", () => {
+  let currentValue = parseInt(quantityInput.value);
+
+  if (currentValue > 1) {
+    quantityInput.value = currentValue - 1;
+  } else {
+    quantityInput.value = 1;
+  }
+
+  totalPrice.textContent = quantityInput.value * 2500;
+
+});
+
+
+
+// ######################################################################
