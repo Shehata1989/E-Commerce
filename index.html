@@ -170,7 +170,6 @@
         <!-- (Hero Section): يحتوي على السلايدر والمحتوى الرئيسي للمنتج -->
         <section class="hero px-5 py-10">
           <div class="container mx-auto">
-            <!-- شبكة مقسمة إلى أعمدة -->
             <div class="grid grid-cols-1 gap-16 md:grid-cols-12">
               <!-- قسم السلايدر -->
               <div class="col-span-6 relative">
@@ -367,19 +366,19 @@
                   </div>
                 </div>
 
-                <div class="form-order mt-20">
+                <div class="form-order">
                   <div class="container mx-auto">
-                    <form class="" action="">
-                      <div class="quantityflex flex-col gap-4 justify-center">
+                    <form class="text-sm" action="">
+                      <div class="quantity flex flex-col gap-4 justify-center">
                         <h1 class="title text-lg font-bold">
                           يرجى ادخال معلوماتك لإكمال الطلب
                         </h1>
                         <div
-                          class="flex gap-5 items-center justify-between bg-light-primary p-2 rounded-xl"
+                          class="flex items-center justify-between bg-light-primary p-2 rounded-xl"
                         >
                           <h1 class="text-sm mr-2">عدد القطع</h1>
                           <div
-                            class="flex items-center justify-center gap-5 bg-light-textPrimary p-2 rounded-xl"
+                            class="flex items-center justify-center gap-2 md:gap-5 bg-light-textPrimary p-2 rounded-xl"
                           >
                             <button
                               type="button"
@@ -390,8 +389,8 @@
                             </button>
                             <input
                               dir="ltr"
-                              id="quantity"
-                              class="inline-block w-[80px] text-center text-xl font-bold bg-transparent text-white border border-light-primary rounded-lg"
+                              id="quantity-input"
+                              class="w-16 text-center text-xl font-bold bg-transparent text-white border border-light-primary rounded-lg"
                               type="text"
                               value="1"
                             />
@@ -404,6 +403,55 @@
                             </button>
                           </div>
                         </div>
+
+                        <div class="flex flex-col gap-1">
+                          <label for="name">اسمك بالكامل</label>
+                          <input
+                            class="w-full p-2 border border-light-primary rounded-lg outline-none"
+                            type="text"
+                            id="name"
+                          />
+                          <!-- <p>هذا الحقل مطلوب !</p> -->
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                          <label for="name">رقم الهاتف</label>
+                          <input
+                            class="w-full p-2 border border-light-primary rounded-lg outline-none"
+                            type="text"
+                            id="phone-number"
+                          />
+                          <!-- <p>هذا الحقل مطلوب !</p> -->
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                          <label for="name">العنوان بالتفصيل</label>
+                          <textarea
+                            class="w-full p-2 border border-light-primary rounded-lg outline-none overflow-hidden"
+                            id="address"
+                          ></textarea>
+                          <!-- <p>هذا الحقل مطلوب !</p> -->
+                        </div>
+
+                        <div
+                          class="font-bold flex justify-between items-center"
+                        >
+                          <h1 class="">تكلفة الشحن</h1>
+                          <h1 class="">شحن مجاني</h1>
+                        </div>
+
+                        <div
+                          class="flex items-center justify-between bg-light-primary p-4 rounded-xl"
+                        >
+                          <h1>إجمالي المبلغ:</h1>
+                          <h1>الاجمالي: <b id="total">2500 ج.م</b></h1>
+                        </div>
+
+                        <button
+                          class="px-6 py-2 font-bold bg-light-primary rounded-full hover:bg-[#0b875e] transition"
+                        >
+                          <span>اطلب الآن</span>
+                        </button>
                       </div>
                     </form>
                   </div>

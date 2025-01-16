@@ -121,20 +121,28 @@ updateTimer();
 
 const plus = document.getElementById("plus");
 const minus = document.getElementById("minus");
-const quantity = document.getElementById("quantity");
+const quantityInput = document.getElementById("quantity-input");
+const totalPrice = document.getElementById("total");
 
 plus.addEventListener("click", () => {
-  quantity.value = parseInt(quantity.value) + 1;
+  let currentValue = parseInt(quantityInput.value);
+  quantityInput.value = currentValue + 1;
+  totalPrice.textContent = quantityInput.value * 2500;
 });
-
-if (quantity.value <= 0) {
-  quantity.value = 1;
-}
 
 minus.addEventListener("click", () => {
-  if (quantity.value > 1) {
-    quantity.value = parseInt(quantity.value) - 1;
+  let currentValue = parseInt(quantityInput.value);
+
+  if (currentValue > 1) {
+    quantityInput.value = currentValue - 1;
+  } else {
+    quantityInput.value = 1;
   }
+
+  totalPrice.textContent = quantityInput.value * 2500;
+
 });
+
+
 
 // ######################################################################
