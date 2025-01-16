@@ -140,9 +140,92 @@ minus.addEventListener("click", () => {
   }
 
   totalPrice.textContent = quantityInput.value * 2500;
-
 });
 
+// ######################################################################
 
+document.addEventListener("DOMContentLoaded", function () {
+  const inputName = document.getElementById("inputName");
+  const inputPhone = document.getElementById("inputPhone");
+  const inputAddress = document.getElementById("inputAddress");
+  const submit = document.getElementById("submit");
+
+  function showErrorMessage(input, message) {
+    let error = input.nextElementSibling;
+
+    if (!error || !error.classList.contains("error-message")) {
+      error = document.createElement("p");
+      error.classList.add("error-message", "text-red-500", "text-sm", "mt-1");
+      input.parentNode.appendChild(error);
+    }
+
+    error.textContent = message;
+  }
+
+  function clearErrorMessage(input) {
+    let error = input.nextElementSibling;
+    if (error && error.classList.contains("error-message")) {
+      error.remove();
+    }
+  }
+
+  function validateInput(input) {
+    if (input === inputName) {
+      // تحقق من الاسم
+      if (input.value.length < 3) {
+        showErrorMessage(input, "يجب أن يكون الاسم على الأقل 3 حروف");
+      } else {
+        clearErrorMessage(input);
+      }
+    } else if (input === inputPhone) {
+      // تحقق من رقم الهاتف
+      const phoneValue = input.value.trim();
+
+      if (!/^\d+$/.test(phoneValue)) {
+        showErrorMessage(input, "يجب إدخال أرقام فقط");
+      } else if (phoneValue.length !== 11) {
+        showErrorMessage(input, "يجب أن يكون الرقم مكونًا من 11 رقمًا");
+      } else {
+        clearErrorMessage(input);
+      }
+    } else if (input === inputAddress) {
+      // تحقق من العنوان
+      if (input.value.length < 3) {
+        showErrorMessage(input, "يجب أن يكون العنوان على الأقل 3 حروف");
+      } else {
+        clearErrorMessage(input);
+      }
+    }
+  }
+
+  // إضافة مستمع الحدث للتحقق عند التركيز (focus) أو عند الكتابة (input)
+  [inputName, inputPhone, inputAddress].forEach((input) => {
+    input.addEventListener("focus", function () {
+      validateInput(input);
+    });
+
+    input.addEventListener("input", function () {
+      validateInput(input);
+      checkFormValidity();
+    });
+  });
+
+  function checkFormValidity() {
+    const isFormValid =
+      inputName.value.length >= 3 &&
+      /^\d{11}$/.test(inputPhone.value) && // تأكد أن الرقم يحتوي على 11 رقمًا فقط
+      inputAddress.value.length >= 3;
+
+    if (isFormValid) {
+      submit.removeAttribute("disabled");
+      submit.classList.remove("disabled");
+    } else {
+      submit.setAttribute("disabled", true);
+      submit.classList.add("disabled");
+    }
+  }
+
+  checkFormValidity();
+});
 
 // ######################################################################

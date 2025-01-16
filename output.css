@@ -715,6 +715,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1107,6 +1111,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
@@ -1221,6 +1230,14 @@ body {
     visibility: hidden;
     opacity: 0;
   }
+}
+
+.disabled {
+  background-color: gray !important;
+}
+
+.submit:hover {
+  background-color: gray !important;
 }
 
 .hover\:scale-100:hover {

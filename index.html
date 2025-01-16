@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <title>E-Commerce</title>
     <!-- Tailwind CSS -->
     <link href="./output.css" rel="stylesheet" />
@@ -408,30 +411,29 @@
                         <div class="flex flex-col gap-1">
                           <label for="name">اسمك بالكامل</label>
                           <input
+                            id="inputName"
                             class="w-full p-2 border border-light-primary rounded-lg outline-none"
                             type="text"
                             id="name"
                           />
-                          <!-- <p>هذا الحقل مطلوب !</p> -->
                         </div>
 
                         <div class="flex flex-col gap-1">
                           <label for="name">رقم الهاتف</label>
                           <input
+                          id="inputPhone"
                             class="w-full p-2 border border-light-primary rounded-lg outline-none"
                             type="text"
                             id="phone-number"
                           />
-                          <!-- <p>هذا الحقل مطلوب !</p> -->
                         </div>
 
                         <div class="flex flex-col gap-1">
                           <label for="name">العنوان بالتفصيل</label>
                           <textarea
                             class="w-full text-lg p-2 border border-light-primary rounded-lg outline-none overflow-hidden"
-                            id="address"
+                            id="inputAddress"
                           ></textarea>
-                          <!-- <p>هذا الحقل مطلوب !</p> -->
                         </div>
 
                         <div
@@ -449,7 +451,9 @@
                         </div>
 
                         <button
-                          class="px-6 py-2 font-bold bg-light-primary rounded-full hover:bg-[#0b875e] transition"
+                        id="submit"
+                        type="submit"
+                          class="submit px-6 py-2 font-bold bg-light-primary rounded-full hover:bg-[#0b875e] transition"
                         >
                           <span>اطلب الآن</span>
                         </button>

@@ -55,3 +55,12 @@ body {
     opacity: 0;
   }
 }
+
+
+.disabled {
+  background-color: gray !important;
+}
+
+.submit:hover {
+background-color: gray !important;
+}
