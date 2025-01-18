@@ -596,10 +596,6 @@ video {
   position: static;
 }
 
-.\!static {
-  position: static !important;
-}
-
 .absolute {
   position: absolute;
 }
@@ -650,10 +646,6 @@ video {
 
 .top-5 {
   top: 1.25rem;
-}
-
-.-bottom-20 {
-  bottom: -5rem;
 }
 
 .z-10 {
@@ -734,10 +726,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -848,20 +836,8 @@ video {
   max-width: 100%;
 }
 
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[92\%\] {
-  max-width: 92%;
-}
-
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
 }
 
 .\!-translate-x-0 {
@@ -1345,6 +1321,11 @@ body {
   content: var(--tw-content);
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.after\:font-bold::after {
+  content: var(--tw-content);
+  font-weight: 700;
 }
 
 .hover\:scale-100:hover {
