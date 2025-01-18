@@ -6,5 +6,8 @@
   },
   "scripts": {
     "start": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "dependencies": {
+    "swiper": "^11.2.1"
   }
 }

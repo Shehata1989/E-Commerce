@@ -8,8 +8,6 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <title>E-Commerce</title>
-    <!-- Tailwind CSS -->
-    <link href="./output.css" rel="stylesheet" />
     <!-- Icomoon Icons -->
     <link rel="stylesheet" href="./icomoon/style.css" />
     <!-- Google Fonts -->
@@ -19,8 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- أنماط Swiper.js للسلايدر -->
-    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+    <!-- استيراد Swiper CSS -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet" />
   </head>
 
   <body dir="rtl" class="bg-light-background">
@@ -174,11 +175,11 @@
         <!-- (Hero Section): يحتوي على السلايدر والمحتوى الرئيسي للمنتج -->
         <section class="hero px-5 py-10">
           <div class="container mx-auto">
-            <div class="grid grid-cols-1 gap-16 md:grid-cols-12">
+            <div class="grid grid-cols-1 gap-5 md:gap-16 md:grid-cols-12">
               <!-- قسم السلايدر -->
-              <div class="col-span-6 relative">
+              <div class="col-span-6">
                 <div class="static md:sticky md:top-5">
-                  <div class="slider relative mb-5 rounded-3xl overflow-hidden">
+                  <div class="mySwiper-1 mb-5 rounded-3xl overflow-hidden relative">
                     <!-- صور السلايدر -->
                     <div class="slides swiper-wrapper">
                       <div class="slide swiper-slide">
@@ -189,7 +190,7 @@
                           loading="lazy"
                         />
                       </div>
-                      <div class="w-full slide swiper-slide">
+                      <div class="slide swiper-slide">
                         <img
                           class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
                           src="./imags/middle-2.webp"
@@ -197,7 +198,7 @@
                           loading="lazy"
                         />
                       </div>
-                      <div class="w-full slide swiper-slide">
+                      <div class="slide swiper-slide">
                         <img
                           class="object-cover rounded-3xl w-full transition duration-500 hover:scale-100 hover:cursor-default md:hover:scale-125 md:hover:cursor-zoom-in"
                           src="./imags/middle-3.webp"
@@ -206,10 +207,8 @@
                         />
                       </div>
                     </div>
+
                   </div>
-                  <div
-                    class="swiper-pagination !static !translate-x-0 !w-full"
-                  ></div>
                   <!-- صور المصغرات -->
                   <div class="thumbnail-swiper hidden mt-5 md:block">
                     <div class="flex items-center gap-2 swiper-wrapper">
@@ -421,7 +420,7 @@
                         <div class="flex flex-col gap-1">
                           <label for="name">رقم الهاتف</label>
                           <input
-                          id="inputPhone"
+                            id="inputPhone"
                             class="w-full p-2 border border-light-primary rounded-lg outline-none"
                             type="text"
                             id="phone-number"
@@ -451,8 +450,8 @@
                         </div>
 
                         <button
-                        id="submit"
-                        type="submit"
+                          id="submit"
+                          type="submit"
                           class="submit px-6 py-2 font-bold bg-light-primary rounded-full hover:bg-[#0b875e] transition"
                         >
                           <span>اطلب الآن</span>
@@ -465,10 +464,171 @@
             </div>
           </div>
         </section>
+
+        <!-- Store Features -->
+        <section
+          class="store-features px-5 py-10 bg-slate-200 text-sm md:text-base"
+        >
+          <!-- الحاوية الأساسية لعرض المزايا -->
+          <div
+            class="container mx-auto grid grid-cols-6 md:grid-cols-12 gap-7 justify-items-center"
+          >
+            <!-- عنصر: ضمان الجودة -->
+            <div class="col-span-3 flex flex-col items-center gap-3">
+              <img
+                class="w-16 max-w-full"
+                src="./imags/store-1.png"
+                alt="ضمان الجودة"
+              />
+              <h1 class="font-medium">ضمان الجودة 100%</h1>
+            </div>
+
+            <!-- عنصر: الشحن المجاني -->
+            <div class="col-span-3 flex flex-col items-center gap-3">
+              <img
+                class="w-16 max-w-full"
+                src="./imags/store-2.png"
+                alt="الشحن مجاني"
+              />
+              <h1 class="font-medium">الشحن مجاني</h1>
+            </div>
+
+            <!-- عنصر: ضمان رسوم الاسترجاع -->
+            <div class="col-span-3 flex flex-col items-center gap-3">
+              <img
+                class="w-16 max-w-full"
+                src="./imags/store-3.png"
+                alt="ضمان رسوم الإسترجاع"
+              />
+              <h1 class="font-medium">ضمان رسوم الإسترجاع</h1>
+            </div>
+
+            <!-- عنصر: الدعم الفني -->
+            <div class="col-span-3 flex flex-col items-center gap-3">
+              <img
+                class="w-16 max-w-full"
+                src="./imags/store-4.png"
+                alt="الدعم الفني"
+              />
+              <h1 class="font-medium">الدعم الفني</h1>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Products -->
+        <section class="features-products px-5 py-10">
+          <div class="container mx-auto">
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 justify-items-center md:justify-items-stretch items-center gap-5"
+            >
+              <!-- ✅ العمود الأيمن -->
+              <div class="col-span-4 grid gap-5 h-[35vh]">
+                <div class="flex items-center gap-4 justify-end">
+                  <h1 class="text-right">صيغة مبتكرة علمياً</h1>
+                  <img
+                    class="w-12"
+                    src="./imags/features-product-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex items-center gap-4 justify-end">
+                  <h1 class="text-right">خالي من المواد الكيماوية</h1>
+                  <img
+                    class="w-12"
+                    src="./imags/features-product-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex items-center gap-4 justify-end">
+                  <h1 class="text-right">طاقة طويلة الأمد</h1>
+                  <img
+                    class="w-12"
+                    src="./imags/features-product-3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <!-- ✅ الصورة المركزية -->
+              <div class="col-span-4 flex justify-center">
+                <img
+                  class="max-w-full h-auto"
+                  src="./imags/features-product.png"
+                  alt=""
+                />
+              </div>
+
+              <!-- ✅ العمود الأيسر (معكوس) -->
+              <div class="col-span-4 grid gap-5 h-[35vh]">
+                <div class="flex items-center gap-4 justify-start">
+                  <img
+                    class="w-12"
+                    src="./imags/features-product-4.png"
+                    alt=""
+                  />
+                  <h1 class="text-left">دعم قوي للعقل</h1>
+                </div>
+                <div class="flex items-center gap-4 justify-start">
+                  <img
+                    class="w-12"
+                    src="./imags/features-product-5.png"
+                    alt=""
+                  />
+                  <h1 class="text-left">سريع الامتصاص</h1>
+                </div>
+                <div class="flex items-center gap-4 justify-start">
+                  <img
+                    class="w-12"
+                    src="./imags/features-product-6.png"
+                    alt=""
+                  />
+                  <h1 class="text-left">نكهات طبيعية مميزة</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Features -->
+        <section class="technical-features">
+          <div class="container mx-auto">
+            <!-- Swiper -->
+            <div class="max-w-3xl mx-auto relative">
+              <div class="mySwiper-2 w-[92%] mx-auto overflow-hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg-slate-500">
+                    <img class="" src="./imags/1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide bg-slate-500">
+                    <img src="./imags/1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide bg-slate-500">
+                    <img src="./imags/1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide bg-slate-500">
+                    <img src="./imags/1.jpeg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="swiper-pagination static !w-full !text-center !my-5 !-translate-x-0"
+                ></div>
+                <div
+                  class="swiper-button-next text-light-primary bg-light-textPrimary w-[35px] h-[35px] rounded-full after:text-sm"
+                ></div>
+                <div
+                  class="swiper-button-prev text-light-primary bg-light-textPrimary w-[35px] h-[35px] rounded-full after:text-sm"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 
-    <script src="./swiper-bundle.min.js"></script>
-    <script src="app-obfuscated.js"></script>
+    <!-- استيراد Swiper JS -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="index.js"></script>
+
+    <!-- <script src="app-obfuscated.js"></script> -->
   </body>
 </html>

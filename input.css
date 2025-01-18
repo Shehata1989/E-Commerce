@@ -2,17 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   font-family: "Alexandria", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-.swiper-pagination-bullet-active {
-  background: #10b981 !important;
+.swiper-button-next,
+.swiper-button-prev {
+  top: calc(50% - 17.5px);
 }
 
+.swiper-pagination-bullet-active {
+  background: #10b981;
+}
+
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 5px;
+  border-radius: 10px;
+}
 
 @keyframes slideIn {
   0% {
@@ -36,7 +45,6 @@ body {
   }
 }
 
-
 @media (max-width: 768px) {
   ul {
     visibility: hidden;
@@ -56,11 +64,10 @@ body {
   }
 }
 
-
 .disabled {
   background-color: gray !important;
 }
 
 .submit:hover {
-background-color: gray !important;
+  background-color: gray !important;
 }

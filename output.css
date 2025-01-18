@@ -592,12 +592,12 @@ video {
   visibility: visible;
 }
 
-.\!static {
-  position: static !important;
-}
-
 .static {
   position: static;
+}
+
+.\!static {
+  position: static !important;
 }
 
 .absolute {
@@ -652,8 +652,20 @@ video {
   top: 1.25rem;
 }
 
+.-bottom-20 {
+  bottom: -5rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 
 .col-span-5 {
@@ -666,6 +678,11 @@ video {
 
 .col-span-7 {
   grid-column: span 7 / span 7;
+}
+
+.\!my-5 {
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
 }
 
 .mx-auto {
@@ -711,12 +728,16 @@ video {
   margin-top: 0.125rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -759,6 +780,14 @@ video {
   height: 35px;
 }
 
+.h-\[35vh\] {
+  height: 35vh;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -787,8 +816,16 @@ video {
   width: 30px;
 }
 
+.w-\[35px\] {
+  width: 35px;
+}
+
 .w-\[90px\] {
   width: 90px;
+}
+
+.w-\[92\%\] {
+  width: 92%;
 }
 
 .w-auto {
@@ -799,6 +836,10 @@ video {
   width: 100%;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .max-w-\[170px\] {
   max-width: 170px;
 }
@@ -807,12 +848,24 @@ video {
   max-width: 100%;
 }
 
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[92\%\] {
+  max-width: 92%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
-.\!translate-x-0 {
-  --tw-translate-x: 0px !important;
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.\!-translate-x-0 {
+  --tw-translate-x: -0px !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
@@ -869,6 +922,10 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -877,12 +934,24 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-1 {
@@ -979,6 +1048,11 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1044,8 +1118,20 @@ video {
   padding-top: 5rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.\!text-center {
+  text-align: center !important;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -1082,6 +1168,10 @@ video {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .leading-7 {
   line-height: 1.75rem;
 }
@@ -1106,14 +1196,14 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .line-through {
@@ -1185,8 +1275,19 @@ body {
   font-style: normal;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  top: calc(50% - 17.5px);
+}
+
 .swiper-pagination-bullet-active {
-  background: #10b981 !important;
+  background: #10b981;
+}
+
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 5px;
+  border-radius: 10px;
 }
 
 @keyframes slideIn {
@@ -1238,6 +1339,12 @@ body {
 
 .submit:hover {
   background-color: gray !important;
+}
+
+.after\:text-sm::after {
+  content: var(--tw-content);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .hover\:scale-100:hover {
@@ -1330,8 +1437,16 @@ body {
     justify-content: flex-start;
   }
 
+  .md\:justify-items-stretch {
+    justify-items: stretch;
+  }
+
   .md\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
   }
 
   .md\:gap-4 {
@@ -1358,6 +1473,11 @@ body {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-lg {
