@@ -26,7 +26,7 @@
 
   <body dir="rtl" class="bg-light-background">
     <div id="root">
-      <!-- إعلان الشحن المجاني -->
+      <!-- Free Shipping -->
       <section class="free-shipping">
         <div
           class="flex items-center justify-center p-4 text-sm shadow-sm announcement bg-light-primary text-light-textPrimary shadow-light-textPrimary/50"
@@ -36,13 +36,12 @@
         </div>
       </section>
 
-      <!-- المحتوى الرئيسي -->
       <main class="main text-light-textPrimary bg-light-background">
-        <!-- الهيدر -->
+        <!-- Header -->
         <header class="px-5 py-6">
           <div class="container mx-auto">
             <div class="grid items-center justify-center grid-cols-12">
-              <!-- الشعار -->
+              <!-- Logo -->
               <div class="col-span-5">
                 <a href="#" class="flex items-center gap-3">
                   <img
@@ -54,9 +53,8 @@
                 </a>
               </div>
 
-              <!-- القائمة -->
               <div class="col-span-7 place-self-end">
-                <!-- زر فتح القائمة -->
+                <!-- Mobile Menu -->
                 <button
                   id="menu"
                   class="md:hidden text-2xl mb-[2px] text-gray-800 hover:text-light-primary transition"
@@ -64,19 +62,19 @@
                 >
                   <i class="icon-menu"></i>
                 </button>
-                <!-- محتوى القائمة -->
+                <!-- Navigation -->
                 <ul
                   id="nav"
                   class="absolute top-0 right-0 z-10 flex flex-col items-center h-full py-20 shadow-lg md:flex md:flex-row md:items-center md:gap-4 md:py-0 md:static md:top-auto md:right-auto md:w-auto md:h-auto md:bg-transparent md:shadow-none w-60 gap-7 bg-slate-100 shadow-slate-400/50"
                 >
-                  <!-- زر غلق القائمة -->
+                  <!-- Close -->
                   <button
                     id="close"
                     class="absolute transition border rounded-full md:hidden top-5 left-5 bg-light-primary w-9 h-9 hover:bg-light-primary"
                   >
                     X
                   </button>
-                  <!-- عناصر القائمة -->
+                  <!-- Links -->
                   <li>
                     <a href="#" class="transition hover:text-light-primary"
                       >أسئلة و أجوبة</a
@@ -92,6 +90,7 @@
                       >مراجعات</a
                     >
                   </li>
+
                   <button
                     class="flex items-center md:mr-5 px-4 py-2 bg-light-primary text-light-textPrimary rounded-full hover:bg-[#0b875e] transition"
                   >
@@ -104,7 +103,7 @@
           </div>
         </header>
 
-        <!-- قسم ملاحظات المنتج -->
+        <!-- Product Notes -->
         <section
           class="px-5 pt-20 pb-10 text-center important-note md:text-start"
         >
@@ -112,7 +111,6 @@
             <div
               class="grid justify-between gap-16 grid-cols-1 md:grid-cols-12"
             >
-              <!-- صورة المنتج -->
               <div class="col-span-6">
                 <img
                   class="w-full h-full object-cover rounded-3xl"
@@ -120,7 +118,7 @@
                   alt="مكملات ما قبل التمرين"
                 />
               </div>
-              <!-- وصف المنتج -->
+
               <div class="flex flex-col justify-center col-span-6 gap-5">
                 <h1 class="text-3xl font-bold">
                   مكملات ما قبل التمرين الأفضل في مصر
@@ -142,7 +140,7 @@
           </div>
         </section>
 
-        <!-- قسم العلامات التجارية -->
+        <!-- Brands Images-->
         <section class="brands-images px-5 py-7 bg-slate-200">
           <div class="container mx-auto overflow-hidden">
             <div
@@ -172,17 +170,17 @@
           </div>
         </section>
 
-        <!-- (Hero Section): يحتوي على السلايدر والمحتوى الرئيسي للمنتج -->
+        <!-- Hero Section-->
         <section class="hero px-5 py-10">
           <div class="container mx-auto">
             <div class="grid grid-cols-1 gap-5 md:gap-16 md:grid-cols-12">
-              <!-- قسم السلايدر -->
+              <!-- Slider-->
               <div class="col-span-6">
                 <div class="static md:sticky md:top-5">
                   <div
                     class="mySwiper-1 mb-5 rounded-3xl overflow-hidden relative"
                   >
-                    <!-- صور السلايدر -->
+                    <!-- Slides -->
                     <div class="slides swiper-wrapper">
                       <div class="slide swiper-slide">
                         <img
@@ -212,7 +210,8 @@
 
                     <div class="swiper-pagination mb-3"></div>
                   </div>
-                  <!-- صور المصغرات -->
+
+                  <!-- Thumbnail -->
                   <div class="thumbnail-swiper hidden mt-5 md:block">
                     <div class="flex items-center gap-2 swiper-wrapper">
                       <div class="flex-1 cursor-pointer thumbnail swiper-slide">
@@ -244,10 +243,8 @@
                 </div>
               </div>
 
-              <!-- قسم التفاصيل -->
               <div class="col-span-6">
                 <div class="content text-center md:text-start">
-                  <!-- صور الأشخاص -->
                   <div
                     class="flex items-center justify-center md:justify-start gap-1 personal-img"
                   >
@@ -288,10 +285,8 @@
                     </h1>
                   </div>
 
-                  <!-- عنوان المنتج -->
                   <h1 class="font-bold text-2xl my-5">القارئ الإلكتروني</h1>
 
-                  <!-- وصف المنتج -->
                   <p class="text-lg leading-7 text-light-textSecondary mb-5">
                     صريات دائرية مع مستقطبات دائرية وأفلام عاكسة (من 0 إلى -5.75
                     ديوبتر قابلة للتعديل) نطاق تعديل المسافة بين الحدقتين (IPD)
@@ -299,7 +294,6 @@
                     271 نقطة في البوصة إضاءة جانبية مع مصابيح LED 3000K
                   </p>
 
-                  <!-- السعر وزر الشراء -->
                   <div
                     class="price flex justify-center md:justify-start items-center gap-5"
                   >
@@ -315,12 +309,11 @@
                   </div>
                 </div>
 
-                <!-- المؤقت -->
+                <!-- Timer -->
                 <div
                   id="timer"
                   class="text-center text-light-primary font-bold text-sm md:text-lg lg:text-xl flex gap-2 lg:gap-5 justify-center items-center my-7"
                 >
-                  <!-- يوم -->
                   <div
                     class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
                   >
@@ -330,11 +323,11 @@
                     ></span>
                     <span>اليوم</span>
                   </div>
-                  <!-- فاصلة -->
+
                   <div class="text-4xl text-light-textPrimary font-bold -mt-2">
                     :
                   </div>
-                  <!-- ساعة -->
+
                   <div
                     class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
                   >
@@ -347,7 +340,7 @@
                   <div class="text-4xl text-light-textPrimary font-bold -mt-2">
                     :
                   </div>
-                  <!-- دقيقة -->
+
                   <div
                     class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
                   >
@@ -360,7 +353,7 @@
                   <div class="text-4xl text-light-textPrimary font-bold -mt-2">
                     :
                   </div>
-                  <!-- ثانية -->
+
                   <div
                     class="bg-light-textPrimary p-4 w-[90px] h-[100px] rounded-lg flex flex-col items-center justify-between relative overflow-hidden"
                   >
@@ -372,6 +365,7 @@
                   </div>
                 </div>
 
+                <!-- Form Order-->
                 <div class="form-order">
                   <div class="container mx-auto">
                     <form class="text-sm" action="">
@@ -389,9 +383,9 @@
                             <button
                               type="button"
                               id="plus"
-                              class="minus bg-light-background w-[30px] h-[30px] rounded-lg font-bold text-2xl"
+                              class="minus flex items-center justify-center bg-light-background w-[35px] h-[35px] rounded-lg font-bold text-2xl"
                             >
-                              +
+                              <i class="icon-plus -mb-1"></i>
                             </button>
                             <input
                               dir="ltr"
@@ -403,9 +397,9 @@
                             <button
                               id="minus"
                               type="button"
-                              class="plus bg-light-background w-[30px] h-[30px] rounded-lg font-bold text-2xl"
+                              class="plus flex items-center justify-center bg-light-background w-[35px] h-[35px] rounded-lg font-bold text-2xl"
                             >
-                              -
+                              <i class="icon-minus -mb-1"></i>
                             </button>
                           </div>
                         </div>
@@ -472,11 +466,9 @@
         <section
           class="store-features px-5 py-10 bg-slate-200 text-sm md:text-base"
         >
-          <!-- الحاوية الأساسية لعرض المزايا -->
           <div
             class="container mx-auto grid grid-cols-6 md:grid-cols-12 gap-7 justify-items-center"
           >
-            <!-- عنصر: ضمان الجودة -->
             <div class="col-span-3 flex flex-col items-center gap-3">
               <img
                 class="w-16 max-w-full"
@@ -486,7 +478,6 @@
               <h1 class="font-medium">ضمان الجودة 100%</h1>
             </div>
 
-            <!-- عنصر: الشحن المجاني -->
             <div class="col-span-3 flex flex-col items-center gap-3">
               <img
                 class="w-16 max-w-full"
@@ -496,7 +487,6 @@
               <h1 class="font-medium">الشحن مجاني</h1>
             </div>
 
-            <!-- عنصر: ضمان رسوم الاسترجاع -->
             <div class="col-span-3 flex flex-col items-center gap-3">
               <img
                 class="w-16 max-w-full"
@@ -506,7 +496,6 @@
               <h1 class="font-medium">ضمان رسوم الإسترجاع</h1>
             </div>
 
-            <!-- عنصر: الدعم الفني -->
             <div class="col-span-3 flex flex-col items-center gap-3">
               <img
                 class="w-16 max-w-full"
@@ -524,7 +513,6 @@
             <div
               class="grid grid-cols-1 md:grid-cols-12 justify-items-center md:justify-items-stretch items-center gap-5"
             >
-              <!-- ✅ العمود الأيمن -->
               <div class="col-span-4 grid gap-5 h-[35vh]">
                 <div class="flex items-center gap-4 justify-end">
                   <h1 class="text-right">صيغة مبتكرة علمياً</h1>
@@ -535,7 +523,9 @@
                   />
                 </div>
                 <div class="flex items-center gap-4 justify-end">
-                  <h1 class="text-right">خالي من المواد الكيماوية</h1>
+                  <h1 class="text-right whitespace-nowrap">
+                    خالي من المواد الكيماوية
+                  </h1>
                   <img
                     class="w-12"
                     src="./imags/features-product-2.png"
@@ -552,7 +542,6 @@
                 </div>
               </div>
 
-              <!-- ✅ الصورة المركزية -->
               <div class="col-span-4 flex justify-center">
                 <img
                   class="max-w-full h-auto"
@@ -561,7 +550,6 @@
                 />
               </div>
 
-              <!-- ✅ العمود الأيسر (معكوس) -->
               <div class="col-span-4 grid gap-5 h-[35vh]">
                 <div class="flex items-center gap-4 justify-start">
                   <img
@@ -730,62 +718,117 @@
         <!-- Services -->
         <section class="services px-5 py-10">
           <div class="container mx-auto">
-            <h1 class="text-center text-3xl font-bold mb-8">الأسئلة الأكثر شيوعا</h1>
+            <h1 class="text-center text-3xl font-bold mb-8">
+              الأسئلة الأكثر شيوعا
+            </h1>
             <div
               class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-5"
             >
-              <div class="accordion-element border border-light-primary p-4 rounded-3xl flex flex-col gap-4 w-full">
+              <div
+                class="accordion-element cursor-pointer border border-light-primary p-4 rounded-3xl flex flex-col w-full"
+              >
                 <div class="flex justify-between items-center">
                   <p class="">هل يتوفر الصندوق بألوان متنوعة؟</p>
                   <i class="icon-plus"></i>
                 </div>
-                <p class="">
+                <p
+                  class="accordion-content text-light-textSecondary text-[12px] h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
                   نعم، يتوفر الصندوق بمجموعة متنوعة من الألوان لتناسب جميع
                   الأذواق.
                 </p>
               </div>
 
-              <div class="accordion-element border border-light-primary p-4 rounded-3xl flex flex-col gap-4 w-full">
-                <p class="">هل يمكن غسل هذا الصندوق؟</p>
-                <p class="">
+              <div
+                class="accordion-element cursor-pointer border border-light-primary p-4 rounded-3xl flex flex-col w-full"
+              >
+                <div class="flex justify-between items-center">
+                  <p class="">هل يمكن غسل هذا الصندوق؟</p>
+                  <i class="icon-plus"></i>
+                </div>
+                <p
+                  class="accordion-content text-light-textSecondary text-[12px] h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
                   نعم، يمكن غسل الصندوق بالغسالة ولكن بدرجة حرارة منخفضة.
                 </p>
               </div>
 
-              <div class="accordion-element border border-light-primary p-4 rounded-3xl flex flex-col gap-4 w-full">
-                <p class="">هل يناسب هذا الصندوق الحوامل؟</p>
-                <p class="">
+              <div
+                class="accordion-element cursor-pointer border border-light-primary p-4 rounded-3xl flex flex-col w-full"
+              >
+                <div class="flex justify-between items-center">
+                  <p class="">هل يناسب هذا الصندوق الحوامل؟</p>
+                  <i class="icon-plus"></i>
+                </div>
+                <p
+                  class="accordion-content text-light-textSecondary text-[12px] h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
                   نعم، يناسب الصندوق النساء الحوامل بفضل تصميمه الواسع والمريح.
                 </p>
               </div>
 
-              <div class="accordion-element border border-light-primary p-4 rounded-3xl flex flex-col gap-4 w-full">
-                <p class="">هل يتوفر الصندوق بمقاسات أخرى؟</p>
-                <p class="">
+              <div
+                class="accordion-element cursor-pointer border border-light-primary p-4 rounded-3xl flex flex-col w-full"
+              >
+                <div class="flex justify-between items-center">
+                  <p class="">هل يتوفر الصندوق بمقاسات أخرى؟</p>
+                  <i class="icon-plus"></i>
+                </div>
+                <p
+                  class="accordion-content text-light-textSecondary text-[12px] h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
                   نعم، يتوفر الصندوق بمقاسات مختلفة ليناسب جميع الأحجام.
                 </p>
               </div>
 
-              <div class="accordion-element border border-light-primary p-4 rounded-3xl flex flex-col gap-4 w-full">
-                <p class="">هل يمكن استرداد المبلغ ؟</p>
-                <p class="">
+              <div
+                class="accordion-element cursor-pointer border border-light-primary p-4 rounded-3xl flex flex-col w-full"
+              >
+                <div class="flex justify-between items-center">
+                  <p class="">هل يمكن استرداد المبلغ ؟</p>
+                  <i class="icon-plus"></i>
+                </div>
+                <p
+                  class="accordion-content text-light-textSecondary text-[12px] h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
                   نعم، يمكنكم طلب استرداد المبلغ خلال 30 يومًا بعد الشراء في
                   حالة عدم الرضا عن المنتج.
                 </p>
               </div>
 
-              <div class="accordion-element border border-light-primary p-4 rounded-3xl flex flex-col gap-4 w-full">
-                <p class="">سهل الاستعمال</p>
-                <p class="">مناسب لاي مناسبه والخروجات المختلفه</p>
+              <div
+                class="accordion-element cursor-pointer border border-light-primary p-4 rounded-3xl flex flex-col w-full"
+              >
+                <div class="flex justify-between items-center">
+                  <p class="">سهل الاستعمال</p>
+                  <i class="icon-plus"></i>
+                </div>
+                <p
+                  class="accordion-content text-light-textSecondary text-[12px] h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
+                  مناسب لأي مناسبة والخروجات المختلفة
+                </p>
               </div>
+            </div>
+            <!-- button -->
+            <div class="mx-auto mt-16 flex justify-center items-center">
+              <img class="max-w-full w-4" src="./imags/btn-l.svg" alt="" />
+              <button
+                class="flex items-center mx-1 px-4 py-2 bg-light-primary text-light-textPrimary rounded-full hover:bg-[#0b875e] transition"
+              >
+                <span>اطلب الان</span>
+                <i class="mr-2 -mt-1 text-xl icon-cart"></i>
+              </button>
+              <img class="max-w-full w-4" src="./imags/btn-r.svg" alt="" />
             </div>
           </div>
         </section>
       </main>
     </div>
 
-    <!-- استيراد Swiper JS -->
+    <!-- Swiper JS -->
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
