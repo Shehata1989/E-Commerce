@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       animation: {
         blink: "blink 2s infinite",
-        marquee: "marquee 15s linear infinite forwards"
+        marquee: "marquee 15s linear infinite forwards",
       },
       keyframes: {
         blink: {
@@ -18,12 +18,12 @@ module.exports = {
         },
         marquee: {
           "0%": {
-            transform: "translateX(-100%)",
+            transform: "translateX(-200%)",
           },
           "100%": {
             transform: "translateX(100%)",
-          }
-        }
+          },
+        },
       },
       colors: {
         light: {
