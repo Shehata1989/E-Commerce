@@ -46,18 +46,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  ul {
+  header ul {
     visibility: hidden;
     opacity: 0;
   }
 
-  ul.show {
+  header ul.show {
     visibility: visible;
     opacity: 1;
     animation: slideIn 0.5s ease-out forwards;
   }
 
-  ul.hidden {
+  header ul.hidden {
     animation: slideOut 0.5s ease-in forwards;
     visibility: hidden;
     opacity: 0;
